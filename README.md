@@ -12,6 +12,14 @@ Laporan Resmi Praktikum Modul 1 Kelompok E19
 - **Sequence number (raw) berapa yang menunjukkan respons dari aktivitas ini pada paket?**
 - **Acknowledge number (raw) berapa yang menunjukkan respons dari aktivitas ini pada paket?**
 
+Gunakan _expression filter_ `ftp` pada _display filter_ untuk memunculkan paket dengan protokol `FTP`. berikutinya mencari paket data yang menggunakan perintah STOR, yaitu perintah yang digunakan untuk mengunggah suatu file, didapatkan yaitu nomor paket 147. Pada `packet detail pane` , buka _dropdown_ `TCP` atau `Transmission Control Protocol`. Terdapat `Sequence number (raw)` dan `Acknowledge number (raw)` dari paket.
+
+![Request](images/1-stor.png)
+
+Selanjutnya, kita buka paket yang merupakan `response` dari paket 147. Paket tersebut mengandung `.zip` yang sama dengan paket 147, terletak pada paket 149. Kita ulangi hal yang sama untuk memperoleh `Sequence number (raw)` dan `Acknowledge number (raw)` dari paket.
+
+![Response](images/1-response.png)
+
 Flag diperoleh sebagai berikut.
 
 ![Flag 1](images/flag-1.png)
@@ -35,7 +43,7 @@ Flag diperoleh sebagai berikut.
 ## Soal 4
 **Berapa nilai checksum yang didapat dari header pada paket nomor `130`?**
 
-Nilai checksum dapat dilihat pada `packet detail pane` dari protokol `UDP`. Protokol yang digunakan paket 130 adalah `QUIC` sehingga harus dilakukan _decode_ terlebih dahulu sehingga dapat diubah menjadi `UDP`.
+Nilai checksum dapat dilihat pada `packet detail pane` dari protokol `UDP`. Protokol yang digunakan paket 130 adalah `QUIC` sehingga harus dilakukan _decode_ terlebih dahulu sehingga dapat diubah menjadi `UDP` atau `User Datagram Protocol`.
 
 ![Decode Paket](images/4-decodeAs)
 
