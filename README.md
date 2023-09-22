@@ -28,7 +28,11 @@ Flag diperoleh sebagai berikut.
 **Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!**
 **gunicorn**
 
-Filter packet dengan query http kemudian follow menggunakan HTTP Stream. Pada bagian server terdapat informasi mengenai web server yang digunakan.
+> Filter packet dengan query http kemudian follow menggunakan HTTP Stream. Pada bagian server terdapat informasi mengenai web server yang digunakan.
+
+![2a](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/19defa68-e46c-475c-b0c7-25e08cb12043)
+
+![2b](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/6bea3912-b788-4637-93fb-99bc15ab0ee7)
 
 Flag diperoleh sebagai berikut.
 
@@ -37,11 +41,13 @@ Flag diperoleh sebagai berikut.
 ## Soal 3
 **Dapin sedang belajar analisis jaringan. Bantu Dapin dengan hal berikut:**
 - **Berapa banyak paket yang ter-capture dengan IP source atau destination address adalah `239.255.255.250` dan port `3702`?**
-    **21**
+> 21
 - **Protokol lapisan transport apa yang digunakan?**
-    **UDP**
+> UDP
 
 > Filter packet dengan query `(ip.src == 239.255.255.250 and udp.port == 3702) or (ip.dst == 239.255.255.250 and udp.port == 3702)`. Pada bagian info terdapat informasi mengenai jumlah paket yang ter-capture. Pada bagian protokol terdapat informasi mengenai protokol lapisan transport yang digunakan.
+
+![3](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/26febb27-923b-45de-9f93-dce8b42206ff)
 
 Flag diperoleh sebagai berikut.
 
@@ -72,9 +78,23 @@ Flag diperoleh sebagai berikut.
 - **Dari semua alamat IP yang ter-capture, IP berapakah yang merupakan alamat IP publik?**
 > 74.53.140.153
 
-> Setelah Membuka file .pcap menggunakan wireshark, kita dapat melihat jumlah paket yang ter-capture pada bagian info. 
-> Untuk mengetahui port yang digunakan oleh server untuk layanan SMTP, kita dapat menggunakan filter `smtp` pada display filter. Setelah itu, kita dapat melihat port yang digunakan pada bagian info. 
+> Setelah Membuka file .pcap menggunakan wireshark, kita dapat melihat jumlah paket yang ter-capture pada bagian info.
+
+![5a](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/c19d306c-52a2-401e-9bc6-c3ac3201f635)
+
+> Untuk mengetahui port yang digunakan oleh server untuk layanan SMTP, kita dapat menggunakan filter `smtp` pada display filter. Setelah itu, kita dapat melihat port yang digunakan pada bagian info.
+
+![5b](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/45e19b74-5978-416a-8eec-5be3c0c23514)
+
+> Setelah filter `smtp` kita bisa mendapatkan password untuk mengakses zip file untuk mendapatkan kode netcat dimana password yang diberikan perlu didecode dulu dengan Base64 dan didapatkan passwordnya itu `5implePas5word`
+
+![5c](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/966bfa3f-2efe-4b95-b825-6c606c6a606e)
+
+![image](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/3e30cd34-e783-40ce-8c96-58fc4e7bc15f)
+
 > Untuk mengetahui alamat IP publik, kita dapat menggunakan filter `ip.src ` pada display filter. Setelah itu, kita dapat melihat alamat IP publik pada bagian info.
+
+![5d](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/77066580-fcdd-493d-abcb-7d7deb2fc6f5)
 
 Flag diperoleh sebagai berikut.
 
@@ -98,6 +118,8 @@ Flag diperoleh sebagai berikut.
 **Berikan kueri filter sehingga Wireshark hanya mengambil semua protokol paket yang menuju port `80`! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad).**
 > tcp.dstport == 80 || udp.dstport == 80
 
+![8](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/fcc474ad-0a45-4fd9-857f-21c73c90be9a)
+
 Flag diperoleh sebagai berikut.
 
 ![Flag 8](images/flag-8.png)
@@ -120,6 +142,10 @@ Flag diperoleh sebagai berikut.
 > dhafin:kesayangannyak0k0
 
 > Pertama buka file .pcap menggunakan wireshark. Kemudian, kita dapat menggunakan filter `telnet` pada display filter. Setelah itu, kita follow TCP Stream pada salah satu paket. Pada bagian info, kita dapat melihat kredensial yang benar ketika pengguna mencoba login menggunakan Telnet. Untuk melihat kredensial yang benar, kita harus setiap packet yang terfilter menggunakan filter `telnet` pada display filter.
+
+![10 a](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/af26ac6e-ed0f-4d73-9d2d-b9b75c46a3dc)
+
+![10](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/52af8c60-b6c8-4972-a869-545c3a552343)
 
 Flag diperoleh sebagai berikut.
 
