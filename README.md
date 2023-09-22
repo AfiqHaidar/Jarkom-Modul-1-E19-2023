@@ -58,11 +58,11 @@ Flag diperoleh sebagai berikut.
 
 Nilai checksum dapat dilihat pada `packet detail pane` dari protokol `UDP`. Protokol yang digunakan paket 130 adalah `QUIC` sehingga harus dilakukan _decode_ terlebih dahulu sehingga dapat diubah menjadi `UDP` atau `User Datagram Protocol`.
 
-![Decode Paket](images/4-decodeAs)
+![Decode Paket](images/4-decodeAs.png)
 
 Setelah itu, pada `packet detail pane` dapat dibuka _dropdown_ dari `UDP` sehingga nilai _checksum_ dapat dilihat.
 
-![Checksum Paket](images/4-checksum)
+![Checksum Paket](images/4-checksum.png)
 
 Flag diperoleh sebagai berikut.
 
