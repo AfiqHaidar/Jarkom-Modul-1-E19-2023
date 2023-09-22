@@ -103,6 +103,17 @@ Flag diperoleh sebagai berikut.
 ## Soal 6
 **Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. Sebagai teman yang baik, ia selalu mengajak SlameT untuk bermain Valorant bersama. Suatu malam, terjadi sebuah hal yang tak terduga. Ketika Udin membuka game tersebut, laptopnya menampilkan sebuah field teks dan sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". Ketika ditelusuri di Google, hasil pencarian hanya menampilkan "a1 e5 u21". Jiwa detektif SlameT pun bergejolak. Bantulah Udin dan SlameT untuk menemukan solusi kode error tersebut.**
 
+> Pertama buka file .pcap menggunakan wireshark. Kemudian kita menuju ke paket 7812 karena itu kata kunci yang bisa mengarahkan kita untuk lanjut ke tahap selanjutnya.
+
+> Setelah itu kita lihat lagi ke soal `server SOURCE ADDRESS 7812 is invalid` dan hint `SOURCE ADDRESS ADALAH KUNCI SEMUANYA.` berarti setelah kita melihat paket 7812, kita harus melihat source address dari paket tersebut. Setelah kita melihat source address dari paket tersebut, kita dapat melihat bahwa source address dari paket tersebut adalah `ip.src == 104.18.14.101`
+
+> Kemudian kita gunakan hint `Jenis cipher merupakan substitusi a1z26 Cipher` & `Rentang Huruf yang digunakan Huruf A-R, 1-18 dengan Jawaban 6 Huruf.` maka dari `ip.src == 104.18.14.101` ini kita bisa membaginya supaya menjadi 6 bagian yaitu
+
+> `10 4. 18. 14. 10 1` yang merupakan jawaban dari soal tersebut, namun sebelum itu kita melakukan substitusi dengan ketentuan `A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=10, K=11, L=12, M=13, N=14, O=15, P=16, Q=17, R=18` sehingga didapatkan jawaban dari soal tersebut adalah `JDRNJA`
+
+Flag diperoleh sebagai berikut.
+
+
 ## Soal 7
 **Berapa jumlah packet yang menuju IP `184.87.193.88`?**
 
@@ -150,3 +161,6 @@ Flag diperoleh sebagai berikut.
 Flag diperoleh sebagai berikut.
 
 ![Flag 10](images/flag-10.png)
+
+## Kendala yang dialami
+- Kesulitan dalam memahami maksud soal no 6 dimana kita harus mencari source address dari paket 7812 dan melihat hint yang diberikan.
