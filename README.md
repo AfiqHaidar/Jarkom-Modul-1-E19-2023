@@ -2,7 +2,7 @@
 Laporan Resmi Praktikum Modul 1 Kelompok E19
 | Nama               |  NRP       | 
 |--------------------|-------------|
-| M. Armand Giovanni | 5025211054  |
+| M. Armand Giovani | 5025211054  |
 | Afiq Fawwaz Haidar | 5025211246  |
 
 ## Soal 1
