@@ -111,8 +111,13 @@ Flag diperoleh sebagai berikut.
 
 > `10 4. 18. 14. 10 1` yang merupakan jawaban dari soal tersebut, namun sebelum itu kita melakukan substitusi dengan ketentuan `A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9, J=10, K=11, L=12, M=13, N=14, O=15, P=16, Q=17, R=18` sehingga didapatkan jawaban dari soal tersebut adalah `JDRNJA`
 
+![6a](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/ce59c850-92be-4dbd-8721-776f2c1d508d)
+
 Flag diperoleh sebagai berikut.
 
+![6 flag](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/eb7f4bd2-c591-4590-a505-7c524893b2d2)
+
+![6 habis submit](https://github.com/AfiqHaidar/Jarkom-Modul-1-E19-2023/assets/100523471/0e2e126e-7632-4e2b-933a-682c6c9a095b)
 
 ## Soal 7
 **Berapa jumlah packet yang menuju IP `184.87.193.88`?**
